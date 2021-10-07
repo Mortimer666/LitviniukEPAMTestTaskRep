@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rolling_stock>
+	<locomotives>
+		<electric_locomotive>
+			<id>e1</id>
+			<type>electric locomotive</type>
+			<name>CHS4</name>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+		</electric_locomotive>
+		<electric_locomotive>
+			<id>e2</id>
+			<type>electric locomotive</type>
+			<name>VL80</name>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+		</electric_locomotive>
+		<diesel_locomotive>
+			<id>d1</id>
+			<type>diesel locomotive</type>
+			<name>2T116</name>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+		</diesel_locomotive>
+		<diesel_locomotive>
+			<id>d2</id>
+			<type>diesel locomotive</type>
+			<name>M62</name>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+		</diesel_locomotive>
+	</locomotives>
+	<railway_carriage>
+		<compartment_car>
+			<id>ct1</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>36</number_of_seats>
+		</compartment_car>
+		<compartment_car>
+			<id>ct2</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>36</number_of_seats>
+		</compartment_car>
+		<compartment_car>
+			<id>ct3</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>36</number_of_seats>
+		</compartment_car>
+		<compartment_car>
+			<id>ct4</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>36</number_of_seats>
+		</compartment_car>
+		<compartment_car>
+			<id>ct5</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>36</number_of_seats>
+		</compartment_car>
+		<common_car>
+			<id>cn1</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn2</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn3</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn4</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn5</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn6</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn7</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn8</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn9</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<common_car>
+			<id>cn10</id>
+			<type>compartment carriage</type>
+			<depot>8</depot>
+			<appointment>passenger</appointment>
+			<number_of_seats>116</number_of_seats>
+		</common_car>
+		<freight_gondola_car>
+			<id>g1</id>
+			<type>gondola carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>40</max_amount_of_cargo>
+		</freight_gondola_car>
+		<freight_gondola_car>
+			<id>g2</id>
+			<type>gondola carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>40</max_amount_of_cargo>
+		</freight_gondola_car>
+		<freight_gondola_car>
+			<id>g3</id>
+			<type>gondola carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>40</max_amount_of_cargo>
+		</freight_gondola_car>
+		<freight_gondola_car>
+			<id>g4</id>
+			<type>gondola carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>40</max_amount_of_cargo>
+		</freight_gondola_car>
+		<freight_gondola_car>
+			<id>g5</id>
+			<type>gondola carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>40</max_amount_of_cargo>
+		</freight_gondola_car>
+		<freight_gondola_car>
+			<id>g6</id>
+			<type>gondola carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>40</max_amount_of_cargo>
+		</freight_gondola_car>
+		<freight_boxcar>
+			<id>b1</id>
+			<type>boxcarriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>35</max_amount_of_cargo>
+		</freight_boxcar>
+		<freight_boxcar>
+			<id>b2</id>
+			<type>boxcarriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>35</max_amount_of_cargo>
+		</freight_boxcar>
+		<freight_boxcar>
+			<id>b3</id>
+			<type>boxcarriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>35</max_amount_of_cargo>
+		</freight_boxcar>
+		<freight_boxcar>
+			<id>b4</id>
+			<type>boxcarriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>35</max_amount_of_cargo>
+		</freight_boxcar>
+		<freight_boxcar>
+			<id>b5</id>
+			<type>boxcarriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>35</max_amount_of_cargo>
+		</freight_boxcar>
+		<freight_tank_car>
+			<id>t1</id>
+			<type>tank carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>60</max_amount_of_cargo>
+		</freight_tank_car>
+		<freight_tank_car>
+			<id>t2</id>
+			<type>tank carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>60</max_amount_of_cargo>
+		</freight_tank_car>
+		<freight_tank_car>
+			<id>t3</id>
+			<type>tank carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>60</max_amount_of_cargo>
+		</freight_tank_car>
+		<freight_tank_car>
+			<id>t4</id>
+			<type>tank carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>60</max_amount_of_cargo>
+		</freight_tank_car>
+		<freight_tank_car>
+			<id>t5</id>
+			<type>tank carriage</type>
+			<depot>8</depot>
+			<appointment>freight</appointment>
+			<max_amount_of_cargo>60</max_amount_of_cargo>
+		</freight_tank_car>
+	</railway_carriage>
+</rolling_stock>
