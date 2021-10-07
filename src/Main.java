@@ -1,13 +1,8 @@
 import entities.*;
-import parser.RollingStockRep;
 
 public class Main {
     public static void main(String[] args) {
         long timeon = System.currentTimeMillis();
-        for (RollingStockRep a : RollingStockRep.cleaner()) {
-            System.out.println(a);
-        }
-        System.out.println();
         Locomotive locomotive = new Locomotive();
         Locomotive locomotive1 = new Locomotive();
 
@@ -19,16 +14,7 @@ public class Main {
         RailwayCarriage railwayCarriage5 = new PassengerCarriage();
         RailwayCarriage railwayCarriage6 = new PassengerCarriage();
         RailwayCarriage railwayCarriage7 = new PassengerCarriage();
-        System.out.println(locomotive);
-        System.out.println(locomotive1);
-        System.out.println(railwayCarriage);
-        System.out.println(railwayCarriage1);
-        System.out.println(railwayCarriage2);
-        System.out.println(railwayCarriage3);
-        System.out.println(railwayCarriage4);
-        System.out.println(railwayCarriage5);
-        System.out.println(railwayCarriage6);
-        System.out.println(railwayCarriage7);
+
 
         Train train = new Train();
         train.add(locomotive1);
@@ -55,8 +41,7 @@ public class Main {
         System.out.println(train1);
         System.out.println(train.countMaxAmountOfCargoOrNumberOfSeats());
         System.out.println(train1.countMaxAmountOfCargoOrNumberOfSeats());
-        long timeoff = System.currentTimeMillis();
-        long delay = timeoff - timeon;
+        long delay = System.currentTimeMillis() - timeon;
         System.out.println(delay);
 
     }
