@@ -10,6 +10,7 @@ public abstract class RailwayCarriage {
     private String appointment;
 
     public RailwayCarriage() {
+        // Че блять это такое
         Collections.shuffle(RollingStockRep.cleaner());
         if (this.getClass() == FreightCarriage.class) {
             for (int i = 0; i < RollingStockRep.cleaner().size(); i++) {
@@ -31,6 +32,14 @@ public abstract class RailwayCarriage {
             }
         }
 
+    }
+
+    // В конструкторе минимум логики. Если ты хочешь из репозитория что-то там крутить вертеть - в репозитории это и делай,
+    // а потом вызывай нормальный конструктор
+    public RailwayCarriage(String id, int depot, String appointment) {
+        this.id = id;
+        this.depot = depot;
+        this.appointment = appointment;
     }
 
     public void setDepot(int depot) {

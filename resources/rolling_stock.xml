@@ -3,7 +3,7 @@
 	<locomotives>
 		<electric_locomotive>
 			<id>e1</id>
-			<type>electric locomotive</type>
+			<type>electric locomotive</type> <!--зачем тебе тип? у тебя тип прописан уже на две строчки выше-->
 			<name>CHS4</name>
 			<depot>8</depot>
 			<appointment>passenger</appointment>

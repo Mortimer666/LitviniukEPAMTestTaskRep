@@ -10,8 +10,9 @@ public class RollingStockRep {
     private int depot;
     private int maximumAmountOfCargo;
     private int numberOfSeats;
-    private static List<RollingStockRep> rollingStockRepList = RollingStockDOMParser.parseXML();
+    private static final List<RollingStockRep> rollingStockRepList = RollingStockDOMParser.parseXML(); // подсвечивает идея
 
+    // Названия методов - всегда глаголы
     public static List<RollingStockRep> cleaner() {
         for (int i = 0; i < rollingStockRepList.size(); i++) {
             if (rollingStockRepList.get(i).getId() == null) {
@@ -30,20 +31,20 @@ public class RollingStockRep {
         return rollingStockRepList;
     }
 
-    @Override
+    @Override // Идея подсказывает же
     public String toString() {
         StringBuilder strb = new StringBuilder();
-        strb.append("ID: " + id + "\t");
-        strb.append("Type: " + type + "\t");
-        strb.append("Appointment: " + appointment + "\t");
+        strb.append("ID: ").append(id).append("\t");
+        strb.append("Type: ").append(type).append("\t");
+        strb.append("Appointment: ").append(appointment).append("\t");
         if (name != null) {
-            strb.append("Name: " + name + "\t");
+            strb.append("Name: ").append(name).append("\t");
         }
         if (maximumAmountOfCargo != 0) {
-            strb.append("Maximum amount of cargo: " + maximumAmountOfCargo + "\t");
+            strb.append("Maximum amount of cargo: ").append(maximumAmountOfCargo).append("\t");
         }
         if (numberOfSeats != 0) {
-            strb.append("Number of seats: " + numberOfSeats + "\t");
+            strb.append("Number of seats: ").append(numberOfSeats).append("\t");
         }
         return strb.toString();
     }
