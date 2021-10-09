@@ -19,9 +19,7 @@ public class PassengerCarriage extends RailwayCarriage {
 
     @Override
     public String toString() {
-        StringBuilder strb = new StringBuilder();
-        strb.append("ID: " + getId() + "\tAppointment: " + getAppointment() + "\tType: " + type + "Number of seats: " + numberOfSeats + "\n");
-        return strb.toString();
+        return "ID: " + getId() + "\tAppointment: " + getAppointment() + "\tType: " + type + "Number of seats: " + numberOfSeats + "\n";
     }
 
     public String getType() {

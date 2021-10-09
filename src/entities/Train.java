@@ -7,49 +7,43 @@ public class Train {
     private Locomotive locomotive;
     private final List<RailwayCarriage> railwayCarriages = new ArrayList<>();
 
-    public boolean add(Locomotive locomotive) {
+    public void add(Locomotive locomotive) { // зачем тебе возвращать что-то здесь?
         if (railwayCarriages.isEmpty() && this.locomotive == null) {
             this.locomotive = locomotive;
-            return true;
+            return;
         }
         if (railwayCarriages.isEmpty()) {
-            return false;
+            return;
         }
         if (this.locomotive == null && railwayCarriages.get(0).getAppointment().compareTo(locomotive.getAppointment()) == 0) {
             this.locomotive = locomotive;
-            return true;
         }
-        return false;
     }
 
-    public boolean add(RailwayCarriage railwayCarriage) {
+    public void add(RailwayCarriage railwayCarriage) {
         if (railwayCarriages.size() != 0) {
             if (locomotive == null && railwayCarriages.get(0).getClass() == railwayCarriage.getClass()) {
                 railwayCarriages.add(railwayCarriage);
-                return true;
+                return;
             }
             if (locomotive == null && railwayCarriages.get(0).getClass() != railwayCarriage.getClass()) {
-                return false;
+                return;
             }
-            if (railwayCarriages.get(0).getClass() == railwayCarriage.getClass() && locomotive.getAppointment().compareTo(railwayCarriage.getAppointment()) == 0) {
+            if (railwayCarriages.get(0).getClass() == railwayCarriage.getClass() && locomotive.getAppointment().equals(railwayCarriage.getAppointment())) {//equals
                 railwayCarriages.add(railwayCarriage);
-                return true;
+                return;
             }
-            if (railwayCarriages.get(0).getClass() == railwayCarriage.getClass() && locomotive.getAppointment().compareTo(railwayCarriage.getAppointment()) != 0) {
-                return false;
+            if (railwayCarriages.get(0).getClass() == railwayCarriage.getClass() && !locomotive.getAppointment().equals(railwayCarriage.getAppointment())) {//equals
+                return;
             }
-            return false;
+            return;
         }
         if (locomotive != null) {
-            if (locomotive.getAppointment().compareTo(railwayCarriage.getAppointment()) == 0) {
+            if (locomotive.getAppointment().equals(railwayCarriage.getAppointment())) { //equals
                 railwayCarriages.add(railwayCarriage);
-                return true;
-            } else {
-                return false;
             }
         } else {
             railwayCarriages.add(railwayCarriage);
-            return true;
         }
     }
 
@@ -58,7 +52,7 @@ public class Train {
         StringBuilder strb = new StringBuilder();
         strb.append("Train: \n");
         if (locomotive != null) {
-            strb.append(locomotive.toString());
+            strb.append(locomotive);
         }
         if (railwayCarriages.size() != 0) {
             for (RailwayCarriage rwc : railwayCarriages) {

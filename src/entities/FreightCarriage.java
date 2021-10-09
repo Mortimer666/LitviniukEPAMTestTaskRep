@@ -8,7 +8,7 @@ public class FreightCarriage extends RailwayCarriage {
 
     public FreightCarriage() {
         for (int i = 0; i < RollingStockRep.cleaner().size(); i++) {
-            if (RollingStockRep.cleaner().get(i).getId().compareTo(super.getId()) == 0) {
+            if (RollingStockRep.cleaner().get(i).getId().equals(super.getId())) { // че за compareTo, equals есть
                 type = RollingStockRep.cleaner().get(i).getType();
                 maximumAmountOfCargo = RollingStockRep.cleaner().get(i).getMaximumAmountOfCargo();
                 RollingStockRep.cleaner().remove(i);
@@ -17,11 +17,10 @@ public class FreightCarriage extends RailwayCarriage {
         }
     }
 
+    // Идея подсвечивает же
     @Override
     public String toString() {
-        StringBuilder strb = new StringBuilder();
-        strb.append("ID: " + getId() + "\tAppointment: " + getAppointment() + "\tType: " + type + "\tMaximum amount of cargo: " + maximumAmountOfCargo + " tons" + "\n");
-        return strb.toString();
+        return "ID: " + getId() + "\tAppointment: " + getAppointment() + "\tType: " + type + "\tMaximum amount of cargo: " + maximumAmountOfCargo + " tons" + "\n";
     }
 
     public String getType() {

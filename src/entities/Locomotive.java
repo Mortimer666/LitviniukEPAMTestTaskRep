@@ -28,11 +28,10 @@ public class Locomotive {
 
     }
 
+    // Идея подсвечивает же
     @Override
     public String toString() {
-        StringBuilder strb = new StringBuilder();
-        strb.append("ID: " + id + "\tName: " + name + "\tAppointment: " + appointment + "\tType: " + type + "\n");
-        return strb.toString();
+        return "ID: " + id + "\tName: " + name + "\tAppointment: " + appointment + "\tType: " + type + "\n";
     }
 
     public void setDepot(int depot) {
